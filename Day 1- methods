@@ -1,0 +1,87 @@
+METHODS 
+
+writing a function inside  class is called method
+method statements: declaration, definition, calling
+declaration  and definition should be outside main class and calling should be inside main class and main method
+syntax:
+function type function name (parameters){ declaration
+            definition
+} // above should be outside main class
+function name (arguments)calling
+//it should be inside main class and main method
+
+FUNCTION TYPES
+
+except void for remaining types, we have to return the data
+for void, orint the data
+except void all others are datatypes having some default value
+void is not a datatype- no defualt values
+
+INPUT/OUTPUT
+
+class Main{
+   public static void main(String args[]){
+       System.out.println("Hello ");
+   }
+}
+
+Scanner class
+
+before scanner class we have a string buffer and string buffer will only accept strings,later you have to convert into your targeted datatypes
+we can't convert mutiple times for multiple inouts that's where scanner class comes in
+in scanner class, we have multiple predefined methods thus creating an object file for scanner class you can access those predefined methods
+
+import java.util.Scanner;
+class Person{
+   
+}   
+    class Main {
+      public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(a);
+    }
+}
+
+create a class using class keyword and name of the class, starting letter should be capital(optional)
+for all the methods, name of the methods should be small
+printf/println accepts two arguments
+
+print factorial using recursions
+
+public class Factorial {
+
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1; 
+        }
+        return n * factorial(n - 1); 
+    }
+    public static void main(String[] args) {
+        int num = 5;
+        System.out.println("Factorial of " + num + " is: " + factorial(num));
+    }
+}
+
+print fibonacci using recursions
+
+public class Fibonacci {
+
+    public static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1; 
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        int n = 10; // Print first 10 Fibonacci numbers
+        System.out.print("Fibonacci Series up to " + n + " terms: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+}
