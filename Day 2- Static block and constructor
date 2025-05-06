@@ -22,3 +22,96 @@ class Demo{
 output: Static block
         Constructor
         Constructor
+we create 2 objects so, constructor will be called 2 times.
+
+STATIC BLOCK
+
+Static block will be created with just static keyword
+It will calll automatically. no need to call with either object or class.
+
+Static method:for static method, no need to call with object, we can directly call with lcass name.
+and here static will act as instance or object
+
+code:
+
+public class Main {
+    public static void main(String[] args) {
+        Person obj = new Person(); 
+        
+        obj.setAge(21);
+        int res = obj.getAge();
+        System.out.println(res);
+        
+        obj.setName("Art");
+        String who = obj.getName();
+        System.out.println(who);
+        
+        obj.setPassedout(true);
+        boolean pass = obj.getPassedout();
+        System.out.println(pass);
+        
+        obj.setMarks(88);
+        float howMuch = obj.getMarks();
+        System.out.println(howMuch);
+        
+        obj.setErp(1234567890);
+        long what = obj.getErp();
+        System.out.println(what);
+    }
+}
+class Person {
+    int age;
+    String name;
+    boolean passedout;
+    float marks;
+    long Erp;
+
+    void setAge(int age) {
+        this.age = age;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    void setPassedout(boolean passedout) {
+        this.passedout = passedout;
+    }
+
+    boolean getPassedout() {
+        return passedout;
+    }
+
+    void setMarks(float marks) {
+        this.marks = marks;
+    }
+
+    float getMarks() {
+        return marks;
+    }
+
+    void setErp(long Erp1) {
+        this.Erp = Erp1;
+    }
+
+    long getErp() {
+        return Erp;
+    }
+}
+
+
+output:
+
+21
+Art
+true
+88.0
+1234567890
