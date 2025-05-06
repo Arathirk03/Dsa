@@ -1,0 +1,24 @@
+CONSTRUCTOR
+
+constructors are used to initiaalize the objects, for every class ther will be a default constructor.whenever we create an object constructor will be called, then objct will be created. 
+constructor has class name and method properties.
+
+for eg:
+public class q2{
+    public static void main(String[] args){
+        Demo d1 = new Demo();
+        Demo d2 = new Demo();
+    }
+}
+class Demo{
+    static{
+        System.out.println("Static block");
+    }
+    Demo() {
+        System.out.println("Constructor");
+    }
+}
+
+output: Static block
+        Constructor
+        Constructor
