@@ -1,3 +1,5 @@
+SWITCH/CASE
+
 code:
 import java.util.Scanner;
 class Main {
@@ -27,4 +29,107 @@ switch(expressions{
   default:
     Statement;
 }
+
+code using switch case:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        switch(n){
+          case 1:
+            System.out.println("Monday");
+            break;
+          case 2:
+            System.out.println("Tuesday");
+            break;
+          case 3:
+            System.out.println("Wednesday");
+            break;
+          case 4:
+            System.out.println("Thursday");
+            break;
+          case 5:
+            System.out.println("Friday");
+            break;
+          case 6:
+            System.out.println("Saturday");
+            break;    
+          default:
+            System.out.println("Sunday");
+        }    
+        } 
+    }
+modified / enhanced version
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        switch(n){
+          case 1-> System.out.println("Monday");
+          case 2->System.out.println("Tuesday");
+          case 3->System.out.println("Wednesday");
+          case 4->System.out.println("Thursday");
+          case 5-> System.out.println("Friday");
+          case 6-> System.out.println("Saturday");
+          case 7-> System.out.println("Sunday");
+          default->  System.out.println("Nothing");
+        }    
+        } 
+TERINARY OPERATOR(Adv if/else)
+
+class Main {
+    public static void main(String[] args) {
+        
+        int n = 5;
+        if(n==5){
+          System.out.println("Yes");
+        }else{
+          System.out.println("No");
+        }    
+        } 
+    }
+
+enhanced/ advanced version:
+
+(condition)? statement 1:statement2;
+String res=(n==5)? ("Yes"):("No");
+System.out.println(res);
+
+Enhanced for loop/ for-each loop
+
+-In collections, we don't have index values, in those situations we have to use for-each loop.
+eg:
+class Main {
+    public static void main(String[] args) {
+        
+        int[] arr ={1,2,3,4,5};
+        
+        for(int var : arr){
+            System.out.println(var);
+        }
+        } 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
