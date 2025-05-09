@@ -1,0 +1,52 @@
+1. number of even ahnd odd numbers in an array
+
+public class Main {
+	public static void main(String[] args) {
+		int[] arr = {1, 2, 3, 4, 5, 6};
+
+		int even = 0;
+		int odd = 0;
+
+		for (int i=0;i<arr.length;i++) {
+			if (arr[i] % 2 == 0) {
+				even++;
+			} else {
+				odd++;
+			}
+		}
+
+		System.out.println("Even numbers: " + even);
+		System.out.println("Odd numbers: " + odd);
+	}
+}
+
+2. highest value in an array
+
+public class Main {
+    public static Integer findMax(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return null;  // or throw IllegalArgumentException
+        }
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 4, 45, 99, 12};
+        Integer maxValue = findMax(arr);
+        System.out.println("Highest value: " + maxValue);
+    }
+}
+
+3. second highest value in an array
+4. check whether the given array is sorted or not.
+5. check whether the element is there or not.
+6. [1,0,1,0,1,0] move all zeros to right side[1,1,1,0,0,0]
+  
+
+
