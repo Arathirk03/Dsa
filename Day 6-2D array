@@ -1,3 +1,8 @@
+2D ARRAY
+
+2D array consists of rows and columns, the very first square bracket indicates rows and square bracket indicates columns.
+while declaring the array, we have to declare number of rows and columns, numbers are optional. Each row will act as an individual array.
+
 for a 2*3 array
 
 import java.util.Scanner;
@@ -21,4 +26,31 @@ public class Main {
         }
     }
 }
+
+input:
+2 3 4
+7 6 12
+output:
+2 3 4
+7 6 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
