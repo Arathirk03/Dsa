@@ -1,2 +1,42 @@
 RECURSION
 Function calls itself and itself till it meets base condition
+There are two types of recursions;
+i)function calling same function(itself and itself)
+ii) function calling another function(itself and itself) till it meets base condtion.
+If we didn't mention base condition properly we will get an exception called stack overflow.
+Recursions are used to break the code
+
+q. Write code for factorial using recursion.
+   5! =120 5 * 4!
+           4! = 4 * 3!
+                    3! = 3 * 2!
+                             2! = 2 * 1!
+                                      1! = 1 * 0!
+For every recursive call elements will be pushed into a stack.After reaching base condition, elements will be popped.
+For our question 5,4,3,2,1 all these values will be pushed in a stack.
+fact(n){
+  if(n==0){
+  return 1;
+  }else{
+  return n * fact(n-1);
+
+fibonacci
+max = Math.max(arr[i], max);
+min = Math.min(arr[i], min);
+if(max>arr[i]){
+  return max;
+else
+  return arr[i]
+
+Pass-by-value and Pass-by-reference:
+In java,we don't have pointers, so we can't use references, so java is pass-by-value.
+
+q. reverse an array using two pointers
+while(i<n-1){
+  swap(arr[i], arr[j]);
+  i++;
+  j--;
+}
+
+
+
