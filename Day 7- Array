@@ -1,0 +1,27 @@
+Array having fixed size, once its fixed, cant change
+  to increase array size dynamically. we have to use array list which belongs to collection framework. 
+
+  what is a framework
+  framework is nothing but a predefined methods and will guide the program. 
+  package - we have predefined methods-- wont guide us
+
+Arraylsit<integer> leaders = new ArrayList();
+List<Wraper Class> ArrayListName = new ArrayList<>()
+
+  List<Integer> leaders = new ArrayList<>();
+
+list is an interface. an interface contains incomplete methods.
+  wrapper class is not a primitivr data type its a class. and in collections we use only wrapper classes.
+  <> is called generics
+
+
+  arraylist is  a class and it contains complete methods
+  arraylist is a dynamic array. if my array size is to if i m trying to add 3 elemnts. the size will be double. and it will copy previous elemnts and vice versa. ie, the array size will become half
+
+  an arraylist is a class . you have to import the array list class. now you can access all the predined methods which consists in arraylist.
+
+
+
+  subarrays
+
+  they are contiguous array. elements must appear in a contigupus manner. Next to each other and in the same order.
