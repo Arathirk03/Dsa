@@ -1,3 +1,64 @@
 Strings are classes, Arrays are objects. The sequence of characters is called strings.
-Strings are immutable. All the array objects will be created in heap memory but strings are created inside heap memory in string pool, Once a string got creted, it will be created permenantly or fixed
+Strings are immutable. All the array objects will be created in heap memory but strings are created inside heap memory in string pool, Once a string got created, it will be created permenantly or fixed
 it means, we can't modify the string.
+
+String a = "Hello";
+String b = "Hello";
+System.out.println(a==b);
+
+In this case, both a and b are assigned the string literal "Hello". 
+Java maintains a special memory area called the String Constant Pool (or String Intern Pool) to store unique string literals.
+When the same literal is used multiple times,Java reuses the existing object from the pool rather than creating a new one.
+Therefore, both a and b reference the same object in memory, making a == b evaluate to true.
+
+String a = new String("Hello");
+String b = new String("Hello");
+System.out.println(a==b);
+
+Here, the new keyword explicitly creates a new String object in the heap memory, regardless of whether an equivalent string exists in the String Constant Pool. 
+As a result, a and b reference two distinct objects, even though their contents are identical.
+
+Thus, a == b evaluates to false because the references point to different objects.
+
+== is used to compare adress or locations 
+equals() eg a.equals() is used to compare data
+
+To get array length we have to use array.length
+
+to reverse a string- convert string to character array and then reverse
+
+commonly used methods
+
+- length() - Returns the length of the string.
+- charAt(int index) - Returns the character at the specified index.
+- substring(int beginIndex, int endIndex) - Extracts a portion of the string.
+- contains(CharSequence s) - Checks if the string contains the specified sequence.
+- startsWith(String prefix) / endsWith(String suffix) - Checks if the string starts/ends with a given substring.
+- toUpperCase() / toLowerCase() - Converts the string to uppercase or lowercase.
+- trim() - Removes leading and trailing spaces.
+- replace(String old, String new) - Replaces occurrences of a substring.
+- split(String regex) - Splits the string into an array based on a regex.
+- equals(String anotherString) / equalsIgnoreCase(String anotherString) - Compares two strings.
+
+Subset:
+From a given array you have to print possible arrays, it should be in a sequence but not continuous
+and in an aray, if we have n number of elements, we will get 26n subsets.
+
+in recursion the only two possiublities are if or else
+but in backtracking we have multiple possibilities
+most of the problems, wheever we reached base case, we have to print all the base case elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
