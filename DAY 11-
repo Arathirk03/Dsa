@@ -1,0 +1,56 @@
+DUTCH NATIONAL FLAG:
+initialize three pointers, l  at 0th index, m at 0th index and h at n-1.
+Loop until m <= h since the region between m and h is unsorted
+If arr[m] == 0, Swap arr[m] and arr[l]; Increment m and Increment l, (because we've moved a 0 to the left side)
+If arr[m] == 1,Increment m, (1s are already in the correct middle zone)
+If arr[m] == 2, Swap arr[m] and arr[h],Decrement h, Do not increment m, (because the swapped element at m still needs to be checked)
+
+class Main {
+    public static void main(String args[]) {
+        int arr[] = {1, 1, 0, 2, 1, 0, 2, 0};
+        int n = arr.length;
+        int l = 0;   
+        int m = 0;     
+        int h = n - 1; 
+        while (m <= h) {
+            if (arr[m] == 0) {
+                int temp = arr[l];
+                arr[l] = arr[m];
+                arr[m] = temp;
+                l++;
+                m++;
+            } else if (arr[m] == 1) {
+                m++;
+            } else { 
+                int temp = arr[m];
+                arr[m] = arr[h];
+                arr[h] = temp;
+                h--;
+            }
+        }
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+                                          Collection framework
+
+                  List:                       Set:                      Map:
+                   |                           |                         |
+                   |- ArrayList                |- HashSet                |- Hashmap
+                   |                           |                         |
+                   |- Linked List              |- LinkedHashSet          |- LinkedHashMap
+                   |                           |                         |
+                   |- Vector                   |- TreeSet                |- TreeMap
+
+List, Set and Map are interfaces, all the other terms are classes.
+Interface contains incomplete methods, class contains complete methods
+List is ordered, which can allow duplicates, Set is unordered which won't accept duplicates. 
+Maps contains key-value pairs
+
+
+
+
+
+
