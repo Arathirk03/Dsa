@@ -35,6 +35,15 @@ Works with strings (characters).
 Order matters, and no skipping allowed.
 Number of substrings = n(n+1)/2 for a string of length n
 
+Greedy algorithm:
+-n meetings in a rrom
+-job scheduling
+-zero by one fractional knapsack.
+
+
+
+
+
 
 
 
