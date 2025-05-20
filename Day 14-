@@ -1,0 +1,54 @@
+arr =[1,2,3]
+SubArray
+[1,2] and [2,3]: possible
+[1,3] and [3,2]: Not possible
+
+A subarray is a contiguous (continuous) part of an array.
+The order of elements must be preserved, and they must be next to each other in the original array.
+For an array of length n, the number of subarrays is n(n+1)/2
+
+
+SubSet
+[1,2],[1,3],[2,3]: possible
+[2,1]: Not possible
+
+A subset is any combination of elements, not necessarily contiguous.
+Order doesn’t matter, and elements can be picked from anywhere in the array.
+For an array of length n, the number of subsets is 2ⁿ.
+
+str = "abc"
+SubSequence
+ab, bc, ac: possible
+ca: Not possible
+
+A subarray is a contiguous part of an array.
+Works with arrays of numbers or elements.
+Order matters, and no skipping allowed.
+Number of subarrays = n(n+1)/2 for an array of length n.
+
+SubString
+ab, bc: possible
+ac, ca: Not possible
+
+A substring is a contiguous part of a string.
+Works with strings (characters).
+Order matters, and no skipping allowed.
+Number of substrings = n(n+1)/2 for a string of length n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
