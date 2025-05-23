@@ -1,0 +1,63 @@
+Maximum product of subarray elemnts:
+
+In the subarray if we have even positive numbers, product will be positive.
+If we have odd negative numbers, product will be negative.
+In the subarray if we have atleast a zero, start your product variable with one.
+If you have a negative value, the product of prefix elemnts will be positive and suffix of negative elements will be positive.
+
+q. intialise maximum variable from
+
+leetcode- 229, 15, 56, 1358, 422, longest repeating char, 875, 162, 1011
+
+
+koko eating bananas
+whatever maximum value we have, we have to check that many values(run loop from 0 to max)
+initialize left pointer at zero, initialize right pointer at maximum.
+get the middle value and divide array elemnts
+get the cell values
+add all those cell values and compare with target hours
+if it is less than or equal to, eliminate right half.
+change right pointer to mid -1
+if the sum is greater than target, eliinate left half and change left pointer to mid +1
+return left
+
+oops
+inheritance
+polymorphism
+encapsulation
+abstraction
+and to achieve, those properties the prerequirement are class objects, constructors and interface
+class is a virtual entity and blueprint for objects
+object:" ionstance of class.
+constructor: initializing the object and in objects we can call methods which were present in the particular class by creating object for the particular class
+2 types:
+default constructor, parameterized constructor
+for evry class, there will be default backbenchers, 
+
+for every class ther will be unfortunate firstbenchers and 
+if the constructor has some parameters we call them paramenterised constructor
+
+inheritence: four types;
+ single inheritence
+
+
+notes, notes, notes 
+
+
+
+ 
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
