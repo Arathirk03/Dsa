@@ -1,16 +1,127 @@
 Delete
-1. delete head node
-2. delete tail node
-3. delete nth node
-4. delete by value
-insert
-1. insert head node
-2. insert tail node
-3. insert nth node
-4. insert by value
+// 1. Delete Head Node
 
+static Node deleteHead(Node head) {
+    if (head == null) return null;
+    Node temp = head;
+    head = head.next;
+    temp.next = null;  
+    return head;
+}
 
+// 2. Delete Tail Node
 
+static Node deleteTail(Node head) {
+    if (head == null || head.next == null) return null;
+    Node temp = head;
+    Node prev = null;
+    while (temp.next != null) {
+        prev = temp;
+        temp = temp.next;
+    }
+    prev.next = null;
+    return head;
+}
+
+// 3. Delete nth Node (1-based index)
+
+static Node deleteNth(Node head, int n) {
+    if (head == null) return null;
+    if (n == 1) return deleteHead(head);
+
+    Node temp = head;
+    Node prev = null;
+    int count = 1;
+    while (temp != null && count < n) {
+        prev = temp;
+        temp = temp.next;
+        count++;
+    }
+    if (temp == null) return head;  // n is out of bounds
+    prev.next = temp.next;
+    temp.next = null;  // Optional cleanup
+    return head;
+}
+
+// 4. Delete By Value (first occurrence)
+
+static Node deleteByValue(Node head, int value) {
+    if (head == null) return null;
+    if (head.data == value) return deleteHead(head);
+
+    Node temp = head;
+    Node prev = null;
+    while (temp != null && temp.data != value) {
+        prev = temp;
+        temp = temp.next;
+    }
+    if (temp == null) return head; 
+    prev.next = temp.next;
+    temp.next = null;
+    return head;
+}
+
+// 1. Insert Head Node
+
+static Node insertHead(Node head, int value) {
+    Node newNode = new Node(value);
+    newNode.next = head;
+    return newNode;
+}
+
+// 2. Insert Tail Node
+
+static Node insertTail(Node head, int value) {
+    Node newNode = new Node(value);
+    if (head == null) return newNode;
+    
+    Node temp = head;
+    while (temp.next != null) {
+        temp = temp.next;
+    }
+    temp.next = newNode;
+    return head;
+}
+
+// 3. Insert at nth Node (1-based)
+
+static Node insertAtNth(Node head, int n, int value) {
+    Node newNode = new Node(value);
+    if (n == 1) {
+        newNode.next = head;
+        return newNode;
+    }
+    Node temp = head;
+    int count = 1;
+    while (temp != null && count < n - 1) {
+        temp = temp.next;
+        count++;
+    }
+    if (temp == null) {
+        // If n is larger than list length, insert at tail
+        return insertTail(head, value);
+    }
+    newNode.next = temp.next;
+    temp.next = newNode;
+    return head;
+}
+
+// 4. Insert after first node with given value
+
+static Node insertAfterValue(Node head, int target, int value) {
+    Node temp = head;
+    while (temp != null && temp.data != target) {
+        temp = temp.next;
+    }
+    if (temp == null) {
+        // Target value not found, no insertion
+        return head;
+    }
+    Node newNode = new Node(value);
+    newNode.next = temp.next;
+    temp.next = newNode;
+    return head;
+}
 
 
 
